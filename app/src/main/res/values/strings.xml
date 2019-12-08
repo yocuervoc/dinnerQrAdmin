@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DinnerQrAdmin</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="registrar">registrar</string>
+    <string name="login">Log in</string>
+    <string name="mensaje">¿Aun no tienes cuenta? Registrate aqui:</string>
+    <string name="name">Nombre</string>
+    <string name="Agregar">agregar</string>
+    <string name="Total">Total a pagar: </string>
+    <string name="factura">Mi cuenta</string>
+</resources>
