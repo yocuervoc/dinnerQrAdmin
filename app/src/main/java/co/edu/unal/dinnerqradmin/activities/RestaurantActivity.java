@@ -40,10 +40,10 @@ public class RestaurantActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant);
         //listView = (ListView)findViewById(R.id.lvPlatos);
-        nombreRestaurante = (TextView)findViewById(R.id.tvRestaurantName);
+        nombreRestaurante = (TextView)findViewById(R.id.tvAllBills);
 
         nombreRestaurante.setText(qrContend);
-        lvItems = (ListView) findViewById(R.id.lvItems);
+        lvItems = (ListView) findViewById(R.id.lvBills);
 
         DatabaseReference restaurante = database.getInstance().getReference("restaurant").child(qrContend);
         restaurante.addValueEventListener(new ValueEventListener() {
