@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activities.RestaurantActivity">
 
     <TextView
@@ -29,8 +31,9 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="138dp"
-        android:layout_height="59dp"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="agregarPlato"
         android:text="Agregar plato"
@@ -39,5 +42,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lvItems" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
