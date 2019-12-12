@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         progressDialog = new ProgressDialog(this);
-
-
     }
-
 
     public void login(View view){
         //Obtenemos el email y la contraseña desde las cajas de texto
@@ -74,8 +71,10 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(opcione);
 
                         } else {
-                            Toast.makeText(MainActivity.this, "Error en unsuario o contraseña", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "Error en usuario o contraseña", Toast.LENGTH_LONG).show();
                         }
+
+                        progressDialog.dismiss();
 
                         // ...
                     }

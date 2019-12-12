@@ -2,38 +2,28 @@ package co.edu.unal.dinnerqradmin.clases;
 
 public class Bill {
 
-    Plato platos [];
+    String id;
     double total;
-    boolean pagado;
 
-
-    public Bill(Plato[] platos, double total, boolean pagado) {
-        this.platos = platos;
+    public Bill(String id, double total) {
+        this.id = id;
         this.total = total;
-        this.pagado = pagado;
     }
 
-    public Plato[] getPlatos() {
-        return platos;
+
+    public String getId() {
+        return id;
     }
 
     public double getTotal() {
         return total;
     }
 
-    public boolean isPagado() {
-        return pagado;
-    }
-
-    public void setPlatos(Plato[] platos) {
-        this.platos = platos;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setTotal(double total) {
         this.total = total;
-    }
-
-    public void setPagado(boolean pagado) {
-        this.pagado = pagado;
     }
 }

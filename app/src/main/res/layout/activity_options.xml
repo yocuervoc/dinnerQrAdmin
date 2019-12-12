@@ -1,53 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+
     tools:context=".activities.OptionsActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:layout_marginRight="5dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/Tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ver facturas por cobrar"
+        android:textSize="24sp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="353dp"
+        android:layout_width="match_parent"
         android:layout_height="192dp"
-        android:layout_marginTop="40dp"
+        android:src="@drawable/bill2"
+
 
         android:onClick="bills"
-        android:src="@drawable/bill2"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonQr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mi menu"
+        android:textSize="24sp" />
 
     <ImageButton
         android:id="@+id/imageButtonQr"
         android:layout_width="353dp"
         android:layout_height="181dp"
-        android:layout_marginTop="60dp"
         android:onClick="menu"
-        android:src="@drawable/menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tvname" />
+        android:src="@drawable/menu" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="72dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="40dp"
-        android:text="bienvenido"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Tvname"
-        android:layout_width="242dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
